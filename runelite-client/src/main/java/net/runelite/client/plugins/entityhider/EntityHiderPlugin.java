@@ -100,6 +100,8 @@ public class EntityHiderPlugin extends Plugin
 		client.setAttackersHidden(config.hideAttackers());
 
 		client.setProjectilesHidden(config.hideProjectiles());
+
+		client.setMiniMapDotsHidden(config.hideMiniMapDots());
 	}
 
 	@Override
@@ -124,6 +126,8 @@ public class EntityHiderPlugin extends Plugin
 		client.setAttackersHidden(false);
 
 		client.setProjectilesHidden(false);
+
+		client.setMiniMapDotsHidden(false);
 	}
 
 	private boolean isPlayerRegionAllowed()
