@@ -152,4 +152,13 @@ public interface EntityHiderConfig extends Config
 	{
 		return false;
 	}
+
+	@ConfigItem(
+			position = 12,
+			keyName = "hideMiniMapDots",
+			name = "Hide Mini-Map Dots",
+			description = "Configures whether or not mini-map dots are hidden"
+	)
+	default boolean hideMiniMapDots() { return false; }
+
 }
